@@ -1,0 +1,44 @@
+Admin:
+	Properties:Admin,IDPassword
+	Method: createProfile()
+		manageSelection()
+		manageInterview()
+		manageUser()
+		manageCompanies()
+		viewFeedback()
+		Login()
+		Logout()
+Candidate:
+	Properties:name,emailID,address,phoneNo,gender 
+	Method: createProfile()
+		searchJob()
+		applyJob()
+		feedback()
+		Login()
+		Logout()
+
+Companies:
+	Properties:companyName,companyID,companyAddress,phoneNo
+	Method: createProfile()
+		manageSelection()
+		manageInterview()
+		searchCandidate()
+		jobRequirements()
+		Login()
+		Logout()
+
+Job:
+	Properties:companyId,companyName,jobTitle,jobDiscription,Vacancies
+	Method: +add()
+		Update()
+		delete()
+		apply()
+
+
+
+
+
+
+
+
+
