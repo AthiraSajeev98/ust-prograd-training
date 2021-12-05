@@ -1,0 +1,36 @@
+Admin:
+	Properties:Admin,IDPassword
+	Method: createProfile()
+		manageCustomer()
+		manageRetailer()
+		viewFeedback()
+		login()
+		logout()
+
+Customer:
+	Properties:name,emailID,address,phoneNo,gender 
+	Method:createProfile()
+		makePayment()
+		searchItem()
+		placeOrder()
+		cancelOrder()
+		feedback()
+		login()
+		logout()
+
+Retailer:
+	Properties:companyName,companyID,companyAddress,phoneNo
+	Method:createProfile()
+		additem()
+		makeRefund()
+		conformDelivery()
+		feedback()
+		login()
+		logout()
+
+Payment:
+	PropertiesorderID,date,modeoOfPayment
+	Method:payment()
+
+
+
