@@ -1,0 +1,55 @@
+Admin
+	Properties: adminID,password
+	
+	Methods:createProfile()
+		managePassenger()
+		manageClerkr()
+		viewFeedback()
+		manageBooking()
+		login()
+		logout()
+
+Passenger 
+	Properties: name,address,phoneNo,gender 
+	
+	Methods:+createProfile()
+		makePayment()
+		bookticket()
+		searchTicket()
+		cancelTickets()
+		feedback()
+		printTicket
+		login()
+		logout()
+
+Clerk 
+	Properties:employeeID,companyID,name,emailID,address,phoneNo,gender 
+
+	Methods:createProfile()
+		manageSchedule()
+		makeRefund()		
+		managePayment()
+		printTicket()
+		feedback()
+		login()
+		logout()
+
+Reservation 
+	Properties:ticketID,noOfTickets
+
+
+	Methods:addTicket()
+		deleteTicket()
+		makeRefund()
+		conformTicket()
+
+
+Payment 
+	Properties:date,modeoOfPayment
+
+	Methods:transaction ()
+
+
+
+
+

@@ -32,5 +32,13 @@ Payment:
 	PropertiesorderID,date,modeoOfPayment
 	Method:payment()
 
+Payment:
+	Properties:ItemName,itemID
+	Method:	addItems()
+		deleteItems()
+		makeRefund()
+		conformDelivery()
+
+
 
 
