@@ -10,7 +10,7 @@ class LengthConverterTest {
     class CentimeterToCentimeterTest {
         @Test
         public void checkIfOneCentimeterEqualToOneCentimeter() {
-            double actualMagnitude = lengthConverter.centiToCenti(1);
+            double actualMagnitude = lengthConverter.centimeterToCentimeter(1);
             double expectedMagnitude = 1;
             assertEquals(expectedMagnitude, actualMagnitude);
 
@@ -18,7 +18,7 @@ class LengthConverterTest {
 
         @Test
         public void checkIfOnePointFiveCentimeterEqualToOnePointFiveCentimeter() {
-            double actualMagnitude = lengthConverter.centiToCenti(1.5);
+            double actualMagnitude = lengthConverter.centimeterToCentimeter(1.5);
             double expectedMagnitude = 1.5;
             assertEquals(expectedMagnitude, actualMagnitude);
         }
@@ -29,14 +29,14 @@ class LengthConverterTest {
     class MeterToCentimeterTest {
         @Test
         public void checkIfOneMeterEqualToHundredCentimeter() {
-            double actualMagnitude = lengthConverter.baseToCenti(1);
+            double actualMagnitude = lengthConverter.meterToCentimeter(1);
             double expectedMagnitude = 100;
             assertEquals(expectedMagnitude, actualMagnitude);
         }
 
         @Test
         public void checkIfOnePointFiveMeterEqualToOneHundredFiftyCentimeter() {
-            double actualMagnitude = lengthConverter.baseToCenti(1.5);
+            double actualMagnitude = lengthConverter.meterToCentimeter(1.5);
             double expectedMagnitude = 150;
             assertEquals(expectedMagnitude, actualMagnitude);
         }
@@ -48,14 +48,14 @@ class LengthConverterTest {
     class CentimeterToKilometerTest {
         @Test
         public void checkIfHundredCentimeterEqualToOneThousandthKilometer() {
-            double actualMagnitude = lengthConverter.centiToKilo(100);
+            double actualMagnitude = lengthConverter.centimeterToKilometer(100);
             double expectedMagnitude = 0.001;
             assertEquals(expectedMagnitude, actualMagnitude);
         }
 
         @Test
         public void checkIfOneHundredFiftyCentimeterEqualToFifteenThousandthKilometer() {
-            double actualMagnitude = lengthConverter.centiToKilo(150);
+            double actualMagnitude = lengthConverter.centimeterToKilometer(150);
             double expectedMagnitude = 0.0015;
             assertEquals(expectedMagnitude, actualMagnitude);
         }
@@ -67,14 +67,14 @@ class LengthConverterTest {
 
         @Test
         public void checkIfAdditionOfOneMeterAndHundredCentimeterGivesTwoMeters() {
-            double actualMagnitude =1+ lengthConverter.centiToBase(100);
+            double actualMagnitude =1+ lengthConverter.centimeterToMeter(100);
             double expectedMagnitude = 2;
             assertEquals(expectedMagnitude, actualMagnitude);
         }
 
         @Test
         public void checkIfAdditionOfTwoHundredCentimetersAndOneKilometersGivesOneLakhAndTwoHundredCentimeters() {
-            double actualMagnitude = 200+ lengthConverter.kiloToCenti(1);
+            double actualMagnitude = 200+ lengthConverter.kilometerToCentimeter(1);
             double expectedMagnitude = 100200;
             assertEquals(expectedMagnitude, actualMagnitude);
 
@@ -86,14 +86,14 @@ class LengthConverterTest {
 
         @Test
         public void checkIfSubtractionOfOneMeterAndFiftyCentimeterGivesPointFiveMeters() {
-            double actualMagnitude = 1- lengthConverter.centiToBase(50);
+            double actualMagnitude = 1- lengthConverter.centimeterToMeter(50);
             double expectedMagnitude = 0.5;
             assertEquals(expectedMagnitude, actualMagnitude);
         }
 
         @Test
         public void checkIfSubtractionOfTwoThousandCentimeterAndOneMeterGivesNineteenHundredCentimeters() {
-            double actualMagnitude = 2000- lengthConverter.baseToCenti(1);
+            double actualMagnitude = 2000- lengthConverter.meterToCentimeter(1);
             double expectedMagnitude = 1900;
             assertEquals(expectedMagnitude, actualMagnitude);
         }
