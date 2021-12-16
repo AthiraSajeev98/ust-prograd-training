@@ -8,30 +8,28 @@ class NoteKeeperTest {
     NoteKeeper noteKeeper = new NoteKeeper();
 
     @BeforeEach
-    public void AddItems() {
+    public void addItems() {
         noteKeeper.addList("Drink Water",true);
         noteKeeper.addList("Eat Healthy",false);
         noteKeeper.addList("Exercise Daily",true);
         noteKeeper.addList("Sleep on Time",false);
     }
 
-
     @Test
-    public void AddItemsToTodoListTest() {
+    public void addItemsToTodoList() {
         String actualList = noteKeeper.checkList("Drink Water");
         assertEquals("Drink Water", actualList);
     }
 
-
     @Test
-    public void RemoveItemsFromTodoListTest() {
+    public void removeItemsFromTodoList() {
         boolean actualList = noteKeeper.removeList("Eat Healthy");
         assertEquals(true, actualList);
     }
 
 
     @Test
-    public void unRemoveItemsFromTodoListTest() {
+    public void unRemoveItemsFromTodoList() {
         boolean actualList = noteKeeper.unRemoveList("Eat Healthy");
         assertEquals(true, actualList);
     }
