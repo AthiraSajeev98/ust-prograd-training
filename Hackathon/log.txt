@@ -1,0 +1,34 @@
+Dec 15, 2021 3:25:53 PM CurrencyConverterApplication main
+INFO: Program Started...
+Dec 15, 2021 3:26:04 PM CurrencyConverterApplication main
+INFO: User selected Dollar to Rupees conversion
+Dec 15, 2021 3:26:17 PM CurrencyConverterApplication main
+INFO: User entered amount in INR : 100.0
+Dec 15, 2021 3:26:17 PM CurrencyConverterApplication main
+INFO: Amount converted to USD : 1.31
+Dec 15, 2021 3:26:28 PM CurrencyConverterApplication main
+INFO: User selected Dollar to Rupees conversion
+Dec 15, 2021 3:26:34 PM CurrencyConverterApplication main
+INFO: User entered amount in INR : 200.0
+Dec 15, 2021 3:26:34 PM CurrencyConverterApplication main
+INFO: Amount converted to USD : 2.63
+Dec 15, 2021 3:28:30 PM CurrencyConverterApplication main
+INFO: User selected Rupees to United Arab Emirates Dirham
+Dec 15, 2021 3:28:36 PM CurrencyConverterApplication main
+INFO: User entered amount in INR: 100.0
+Dec 15, 2021 3:28:36 PM CurrencyConverterApplication main
+INFO: User entered amount : 4.83
+Dec 15, 2021 3:28:46 PM CurrencyConverterApplication main
+INFO: User selected Rupees to Omani Rial
+Dec 15, 2021 3:28:52 PM CurrencyConverterApplication main
+INFO: User entered amount in INR : 200.0
+Dec 15, 2021 3:28:52 PM CurrencyConverterApplication main
+INFO: User entered amount : 1.01
+Dec 15, 2021 3:29:15 PM CurrencyConverterApplication main
+INFO: User selected Rupees to US Dollar conversion
+Dec 15, 2021 3:29:18 PM CurrencyConverterApplication main
+INFO: User entered amount in USD : 0.0
+Dec 15, 2021 3:29:18 PM CurrencyConverterApplication main
+INFO: Amount converted to INR : 0.0
+Dec 15, 2021 3:31:46 PM CurrencyConverterApplication main
+INFO: Program Stopped...
