@@ -1,0 +1,41 @@
+create database Bank;
+show databases;
+
+create table Bank.Customer(
+CustomerID int,
+CustomerName varchar(225),
+PhoneNumber varchar(225));
+select * from Bank.Customer;
+select CustomerID,CustomerName from Bank.Customer;
+
+
+insert into Bank.Customer values(12345,"Athira Sajeev","9823785430");
+insert into Bank.Customer values(12346,"Varun Sajeev","982621563");
+insert into Bank.Customer values(12347,"Akshay Krishna","9123095329");
+
+delete from Bank.Customer where CustomerID=12345;
+SET SQl_SAFE_UPDATES=0;
+
+insert into Bank.Customer values(12345,"Athira Sajeev","9823785430");
+
+alter table Bank.Customer add primary key(CustomerID);
+alter table Bank.Customer drop primary key;
+
+update Bank.Customer set PhoneNumber="9898989898" where CustomerID=12347;
+
+select CustomerName from Bank.Customer where CustomerName like "A%a";
+
+select * from Bank.Customer order by CustomerID asc;
+
+delete from  Bank.Customer;
+
+drop table Bank.Customer;
+
+drop database Bank;
+
+
+
+
+
+
+

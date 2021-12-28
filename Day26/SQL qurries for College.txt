@@ -1,0 +1,52 @@
+create database College; 
+show databases;
+create table College.Student( ID int,Name varchar(255),Department varchar(255) ,Contact int,Marks int);
+
+select * from College.Student;
+
+insert into College.Student values (1000,"Athira","ECE",123001,90);
+insert into College.Student values (1001,"Varun","CSE",123002,92);
+insert into College.Student values (1002,"Adhav","IT",123003,91);
+insert into College.Student values (1003,"Madhav","IT",123004,89);
+insert into College.Student values (1004,"Akshay","CSE",123005,95);
+
+select ID,Name from College.Student;
+
+delete from College.Student where Name = "Akshay";
+
+insert into College.Student values (1004,"Akshay","CSE",123005,95);
+
+select min(Marks) as Minimum from College.Student;
+
+select count(Marks) as Total from College.Student where ID = 1001;
+
+SET SQL_SAFE_UPDATES = 0;
+
+alter table College.Student add primary key (ID);
+alter table College.Student drop primary key;
+
+select * from College.Student where Marks > 90 and Department = "CSE";
+show databases;
+
+update College.Student set Contact = 999999;
+
+select * from College.Student where Marks between 91 and 99;
+select * from College.Student where Marks not between 91 and 99;
+
+select * from College.Student where Department in ("CSE","IT");
+
+select Name from College.Student where Name like "A%";
+select Name from College.Student where Name like "%v";
+select Name from College.Student where Name like "A%a";
+
+select count(ID) as Number,Department from College.Student group by Department order by Number desc;
+
+select * from College.Student order by ID asc;
+
+delete from College.Student;
+drop table College.Student;
+drop database College;
+show databases;
+
+
+
