@@ -65,9 +65,10 @@ public class JPA_MVC_Controller {
     public String list(Model model, HttpServletRequest request) {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        Customers customerData = new Customers();
 
+        Customers customerData = new Customers();
         customerData = customerService.byId(username);
+
         if (Objects.equals(password, customerData.getPassword())) {
             model.addAttribute("customerName", customerData.getCustomerName());
             model.addAttribute("phoneNumber", customerData.getPhoneNumber());
