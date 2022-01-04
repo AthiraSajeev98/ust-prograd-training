@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org ">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+ padding: 20px 30px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="/customerAccount"><span th:text="${name}"></span></a></li>
+    <li><a href="/balance" >Balance</a></li>
+    <li><a href="/login">Logout</a></li>
+
+</ul>
+<br><br>
+<form action="/transaction" method="post">
+    <p>From Account Number: <input type="text" name="fromAccountNumber" placeholder="Enter From Account Number" th:value="${accountNumber}"><br><br></p>
+    <p>To Account Number : <input type="text" name="toAccountNumber" placeholder="Enter To Account Number"><br><br></p>
+    <p>Amount : <input type="text" name="amount" placeholder="Enter amount in ₹"><br><br></p>
+    <input type="submit" value="Transfer">
+</form>
+
+
+</body>
+</html>
