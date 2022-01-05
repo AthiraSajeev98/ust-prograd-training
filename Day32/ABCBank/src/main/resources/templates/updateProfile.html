@@ -51,12 +51,12 @@ padding-top:10px;
 </ul>
 <br><br>
 <form action="/customerAccount" method="post">
-    <p>Username : <input type="text" name="userName" placeholder="Username" th:value="${customers.username}"><br><br>
+    <p>Username : <input type="text" name="userName" placeholder="Username" th:value="${customers.username}"  readonly><br><br>
     </p>
     <p>Reset Password : <input type="password" name="password" placeholder="Password"
                                th:value="${customers.password}"><br><br></p>
 
-    <p>Customer Name : <input type="text" name="name" placeholder="Name" th:value="${customers.customerName}"><br><br>
+    <p>Customer Name : <input type="text" name="name" placeholder="Name" th:value="${customers.customerName}" readonly><br><br>
     </p>
     <p>Reset Phone Number : <input type="text" name="phoneNumber" placeholder="Phone Number"
                                    th:value="${customers.phoneNumber}"><br><br></p>

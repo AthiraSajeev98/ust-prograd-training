@@ -42,7 +42,7 @@ li a:hover {
 </ul>
 <br><br>
 <form action="/transaction" method="post">
-    <p>From Account Number: <input type="text" name="fromAccountNumber" placeholder="Enter From Account Number" th:value="${accountNumber}"><br><br></p>
+    <p>From Account Number: <input type="text" name="fromAccountNumber"  placeholder="Enter From Account Number" th:value="${accountNumber}" readonly><br><br></p>
     <p>To Account Number : <input type="text" name="toAccountNumber" placeholder="Enter To Account Number"><br><br></p>
     <p>Amount : <input type="text" name="amount" placeholder="Enter amount in ₹"><br><br></p>
     <input type="submit" value="Transfer">
