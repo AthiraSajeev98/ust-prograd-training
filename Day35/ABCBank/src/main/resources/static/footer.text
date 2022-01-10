@@ -1,0 +1,134 @@
+
+<div class="footerContainer">
+    <div class="footerWrap">
+        <div class="footerLinksContainer">
+            <div class="footerLinksWrapper">
+                <div class="footerLinksItems">
+                    <div class="footerLinkTitle">About Us</div>
+                    <div class="footerLink">How it Works</div>
+                    <div class="footerLink">Testimonials</div>
+                    <div class="footerLink">Careers</div>
+                    <div class="footerLink">Grievances</div>
+                    <div class="footerLink">Terms of Services</div>
+                </div>
+            </div>
+            <div class="footerLinksWrapper">
+                <div class="footerLinksItems">
+                    <div class="footerLinkTitle">Social Media</div>
+                    <div class="footerLink">Facebook</div>
+                    <div class="footerLink">Instagram</div>
+                    <div class="footerLink">Youtube</div>
+                    <div class="footerLink">LinkedIn</div>
+                    <div class="footerLink">Twitter</div>
+                </div>
+            </div>
+        </div>
+        <div class="socialMedia">
+            <div class="socialMediaWrapper">
+                <div class="myLogo">
+                    abc
+                </div>
+                <div class="websiteRights">
+                    ABCBank © 2022 All rights reserved.
+                </div>
+                <div class="socialIcons">
+                    <div class="socialIconLink" href="www.facebook.com" target="_blank" aria-label="Facebook"><a href="#" class="fa fa-facebook"></a></div>
+                    <div class="socialIconLink" href="www.facebook.com" target="_blank" aria-label="Facebook"></div>
+                    <div class="socialIconLink" href="www.facebook.com" target="_blank" aria-label="Facebook"></div>
+                    <div class="socialIconLink" href="www.facebook.com" target="_blank" aria-label="Facebook"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+#========>CSS
+.footerContainer{
+background-color: #011522;
+}
+.footerWrap{padding: 48px 24px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              max-width: 1100px;
+              margin: 0 auto;
+}
+.footerLinksContainer{display: flex;
+                        justify-content: center;
+
+                        @media screen and (max-width: 820px) {
+                          padding-top: 32px;
+                        }
+}
+.footerLinksWrapper{display: flex;
+
+                      @media screen and (max-width: 820px) {
+                        flex-direction: column;
+                      }
+}
+.footerLinksItems{display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin: 16px;
+                    text-align: left;
+                    width: 160px;
+                    box-sizing: border-box;
+                    color: #fff;
+
+                    @media screen and (max-width: 420px) {
+                      margin: 0;
+                      padding: 10px;
+                      width: 100%;
+}
+.footerLinkTitle{font-size: 14px;
+                   margin-bottom: 16px;
+}
+.footerLink{color: #fff;
+              text-direction: none;
+              text-decoration: none;
+              margin-bottom: 0.5rem;
+              font-size: 14px;
+
+              &:hover {
+                color: #01bf71;
+                transition: 0.3s ease-in-out;
+              }
+}
+.socialMedia{max-width: 1000px;
+               width: 100%;
+}
+.socialMediaWrapper{display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      max-width: 1100px;
+                      margin: 40px auto 0 auto;
+
+                      @media screen and (max-width: 820px) {
+                        flex-direction: column;
+                      }
+}
+.myLogo{color: #fff;
+          justify-self: start;
+          cursor: pointer;
+          text-decoration: none;
+          font-size: 1.5rem;
+          display: flex;
+          align-items: center;
+          margin-bottom: 16px;
+          font-weight: bold;
+}
+.websiteRights{color: #fff;
+                 margin-bottom: 16px;
+}
+.socialIcons{display: flex;
+               justify-content: space-between;
+               align=items: center;
+               width: 240px;
+}
+.socialIconLink{color: #fff;
+                  font-size: 24px
+}
+

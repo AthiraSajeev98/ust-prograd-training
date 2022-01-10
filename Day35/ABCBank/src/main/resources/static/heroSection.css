@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+.heroSection {
+  background: #0c0c0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+}
+.heroSection:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  z-index: 2;
+}
+.heroImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.heroContent {
+  z-index: 3;
+  max-width: 1200px;
+  position: absolute;
+  padding: 8px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heroHeading {
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
+}
+.heroParagraph {
+  margin-top: 24px;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  max-width: 600px;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
+}
+
+.button2 {
+  font-family: "Comfortaa", cursive;
+  text-transform1: uppercase;
+  outline: 0;
+  background: #fff;
+
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #fff;
+  font-color:#302b63;
+  font-size: 14px;
+  font-weight:700;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  text-decoration:none;
+}
+.button2:hover {
+  transition: all 0.6s ease-in-out;
+  background: linear-gradient(#155c8a,#6A82FB);
+  color: #fff;
+}
+.buttonWrapper{
+margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paragraphWrapper{
+justify-content:center;
+align-items:center;
+
+}
+.paragraphWrapper p{
+
+}
