@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org ">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Movies</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<ul>
+    <li><a href="/home">Home</a></li>
+    <li><a href="/login">Login</a></li>
+</ul>
+<ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+<div class="area">
+    <div class="login">
+        <h6 style="font-size:20px;color:white;" align="center"><small><span th:text="${successMessage}"></span></small></h6>
+        <div class="form">
+            <form class="login-form" action="/addMovies" method="post">
+                <span>Add Movie</span><br><br><br>
+                <input type="text" name="movieId" placeholder="Movie ID" required/>
+                <input type="text" name="movieName" placeholder="Movie Name" required/>
+                <input type="time" name="showMovieTime" placeholder="Time" required/>
+                <input type="date" name="showMovieDate" placeholder="Date" required/>
+                <input type="text" name="venue" placeholder="Venue" required/>
+                <button type="submit">Click to Add Movie</button>
+            </form>
+        </div>
+    </div>
+</div>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+</body>
+</html>

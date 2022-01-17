@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org ">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/login.css">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+<ul>
+    <li><a th:href="@{/userProfile/{userId} (userId=${username})}">Profile</a></li>
+    <li><a href="/viewMovies">Movies</a></li>
+    <li><a href="/previousBookings">Previous Bookings</a></li>
+    <li><a href="/wallet">Wallet</a></li>
+    <li><a href="/login">Logout</a></li>
+</ul>
+
+<ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <div class="area">
+        <div class="login"><h6 style="font-size:20px;color:white;" align="center"><small><span
+                th:text="${successMessage}"></span></small></h6>
+            <div class="form">
+                <span>Profile</span><br><br><br>
+                <div style="font-size:15px;">Name :<span class="formStyle" style="font-size:18px;"
+                                                         th:text="${customerName}"></span>
+                </div><br>
+                <div style="font-size:15px;">Age : <span class="formStyle" style="font-size:18px;"
+                                                         th:text="${age}"></span></div><br>
+                <div style="font-size:15px;">Gender: <span class="formStyle" style="font-size:18px;"
+                                                           th:text="${gender}"></span>
+                </div><br>
+                <div style="font-size:15px;">Email : <span class="formStyle" style="font-size:18px;"
+                                                           th:text="${emailId}"></span>
+                </div><br>
+                <div style="font-size:15px;">Phone :<span class="formStyle" style="font-size:18px;"
+                                                          th:text="${phoneNumber}"></span>
+                </div><br>
+                <div style="font-size:15px;">Address : <span class="formStyle" style="font-size:18px;"
+                                                             th:text="${address}"></span>
+                </div><br>
+            </div>
+        </div>
+    </div>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>

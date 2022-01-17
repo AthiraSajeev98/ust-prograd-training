@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org ">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<ul>
+    <li><a th:href="@{/userProfile/{userId} (userId=${username})}">Profile</a></li>
+    <li><a href="/viewMovies">Movies</a></li>
+    <li><a href="/previousBookings">Previous Bookings</a></li>
+    <li><a href="/wallet">Wallet</a></li>
+    <li><a href="/login">Logout</a></li>
+</ul>
+<div class="area">
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <div class="area">
+            <div class="login">
+                <br>
+                <h6 style="font-size:20px;color:white;" align="center"><small><span th:text="${successMessage}"></span></small></h6>
+                <h6 style="font-size:20px;color:white;" align="center"><small><span th:text="${errorMessage}"></span></small></h6>
+                <h6 style="font-size:20px;color:white;" align="center"><small><span th:text="${message}"></span></small></h6>
+                <div class="form">
+                    <form class="login-form" action="/wallet" method="post">
+                        <span>Wallet<br><br></span>
+                        <div style="font-size:15px;">Name :<span class="formStyle" style="font-size:18px;"
+                                                                 th:text="${name}"></span>
+                        </div><br>
+                        <div style="font-size:15px;">Wallet balance : <span class="formStyle" style="font-size:18px;"
+                                                                            th:text="${balance}"></span></div>
+                        <br><br><input type="text" name="amount" placeholder="Enter amount in ₹" required/>
+                        <button type="submit">Add wallet balance</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>

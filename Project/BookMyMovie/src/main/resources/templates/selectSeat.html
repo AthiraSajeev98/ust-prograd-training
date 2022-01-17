@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org ">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Seat</title>
+    <link rel="stylesheet" href="selectSeat.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<ul>
+    <li><a th:href="@{/userProfile/{userId} (userId=${username})}">Profile</a></li>
+    <li><a href="/viewMovies">Movies</a></li>
+    <li><a href="/previousBookings">Previous Bookings</a></li>
+    <li><a href="/wallet">Wallet</a></li>
+    <li><a href="/login">Logout</a></li>
+</ul>
+<h6 style="font-size:20px;color:white;" align="center"><small><span th:text="${availableSeats}"></span></small></h6>
+<h6 style="font-size:20px;color:white;" align="center"><small><span th:text="${errorMessage}"></span></small></h6>
+<h6 style="font-size:20px;color:white;" align="center"><small><span th:text="${message}"></span></small></h6>
+<div class="area">
+    <div class="theatre">
+        <div class="screen-side">
+            <div class="screen">Screen</div>
+            <h3 class="select-text">Please select a seat</h3>
+        </div>
+        <div class="exit exit--front">
+        </div>
+        <ol class="cabin">
+            <li class="row row--1">
+                <ol class="seats" type="A">
+                    <li class="seat">
+                        <input type="checkbox" id="1A" value="seatId"/>
+                        <label for="1A">1A</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="1B" value="seatId"/>
+                        <label for="1B">1B</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="1C" value="seatId"/>
+                        <label for="1C">1C</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="1D" value="seatId"/>
+                        <label for="1D">1D</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="1E" value="seatId"/>
+                        <label for="1E">1E</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="1F" value="seatId"/>
+                        <label for="1F">1F</label>
+                    </li>
+                </ol>
+            </li>
+            <li class="row row--2">
+                <ol class="seats" type="A">
+                    <li class="seat">
+                        <input type="checkbox" id="2A" value="seatId"/>
+                        <label for="2A">2A</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="2B" value="seatId"/>
+                        <label for="2B">2B</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="2C" value="seatId"/>
+                        <label for="2C">2C</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="2D" value="seatId"/>
+                        <label for="2D">2D</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="2E" value="seatId"/>
+                        <label for="2E">2E</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="2F" value="seatId"/>
+                        <label for="2F">2F</label>
+                    </li>
+                </ol>
+            </li>
+            <li class="row row--3">
+                <ol class="seats" type="A">
+                    <li class="seat">
+                        <input type="checkbox" id="3A" value="seatId"/>
+                        <label for="3A">3A</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="3B" value="seatId"/>
+                        <label for="3B">3B</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="3C" value="seatId"/>
+                        <label for="3C">3C</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="3D" value="seatId"/>
+                        <label for="3D">3D</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="3E" value="seatId"/>
+                        <label for="3E">3E</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="3F" value="seatId"/>
+                        <label for="3F">3F</label>
+                    </li>
+                </ol>
+            </li>
+            <li class="row row--4">
+                <ol class="seats" type="A">
+                    <li class="seat">
+                        <input type="checkbox" id="4A" value="seatId"/>
+                        <label for="4A">4A</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="4B" value="seatId"/>
+                        <label for="4B">4B</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="4C" value="seatId"/>
+                        <label for="4C">4C</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="4D" value="seatId"/>
+                        <label for="4D">4D</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="4E" value="seatId"/>
+                        <label for="4E">4E</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="4F" value="seatId"/>
+                        <label for="4F">4F</label>
+                    </li>
+                </ol>
+            </li>
+            <li class="row row--5">
+                <ol class="seats" type="A">
+                    <li class="seat">
+                        <input type="checkbox" id="5A" value="seatId"/>
+                        <label for="5A">5A</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="5B" value="seatId"/>
+                        <label for="5B">5B</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="5C" value="seatId"/>
+                        <label for="5C">5C</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="5D" value="seatId"/>
+                        <label for="5D">5D</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="5E" value="seatId"/>
+                        <label for="5E">5E</label>
+                    </li>
+                    <li class="seat">
+                        <input type="checkbox" id="5F" value="seatId"/>
+                        <label for="5F">5F</label>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <div class="exit exit--back">
+        </div>
+        <div class="login">
+        <div class="form">
+        <button id="bookSeat" align="Center" >Book Seat</button></div></div>
+    </div>
+    <form action="/saveTicket" method="post" style="display:none">
+        <input type="text" id="bookedSeats" name="bookedSeats">
+        <button type="submit" id="submitSeats">Book</button>
+    </form>
+</div>
+<script>
+function bookingSeat(){
+    let inputs=document.querySelectorAll("input[type=checkbox]")
+    for(let i=0; i<inputs.length; i++){
+        if(inputs[i].checked){
+        document.getElementById("bookedSeats").value+= inputs[i].id + " "
+        }
+    }
+    document.getElementById("submitSeats").click()
+}
+document.getElementById("bookSeat").addEventListener("click",bookingSeat)
+</script>
+</body>
+</html>

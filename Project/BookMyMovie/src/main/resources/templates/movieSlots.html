@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org ">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Slots</title>
+    <link rel="stylesheet" href="movieSlots.css">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+<ul>
+    <li><a th:href="@{/userProfile/{userId} (userId=${username})}">Profile</a></li>
+    <li><a href="/viewMovies">Movies</a></li>
+    <li><a href="/previousBookings">Previous Bookings</a></li>
+    <li><a href="/balance">Wallet</a></li>
+    <li><a href="/login">Logout</a></li>
+</ul>
+<ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+<div class="area">
+    <div class="login">
+        <h6 style="font-size:20px;color:white;" align="center"><small><span th:text="${successMessage}"></span></small></h6><br>
+        <div class="form">
+            <span>Book slot</span><br><br>
+            <table class="space" >
+                <tr >
+                    <td style="font-size:15px;font-weight:bold;">Movie Id</td>&nbsp;&nbsp;
+                    <td style="font-size:15px;font-weight:bold;">Movie Name</td>&nbsp;&nbsp;
+                    <td style="font-size:15px;font-weight:bold;">Movie Date</td>&nbsp;&nbsp;
+                    <td style="font-size:15px;font-weight:bold;">Movie Time</td>&nbsp;&nbsp;
+                    <td style="font-size:15px;font-weight:bold;">Venue</td>&nbsp;&nbsp;
+                    <td style="font-size:15px;font-weight:bold;">Book Seat</td>
+                </tr>
+
+                <tr th:each="movie : ${moviesList}">
+                    <form action="/selectSeat" method="post">
+                        <td><span class="formStyle" style="font-size:15px;"
+                                  th:text="${movie.movieId}"></span></td>&nbsp;&nbsp;&nbsp;
+                        <td><span class="formStyle" style="font-size:15px;"
+                                  th:text="${movie.movieName}"></span></td>&nbsp;&nbsp;&nbsp;
+                        <td><span class="formStyle" style="font-size:15px;"
+                                  th:text="${movie.showMovieDate}"></span></td>&nbsp;
+                        <td><span class="formStyle" style="font-size:15px;"
+                                  th:text="${movie.showMovieTime}"></span></td>&nbsp;
+                        <td><span class="formStyle" style="font-size:15px;"
+                                  th:text="${movie.venue}"></span></td>
+                        <td>
+                            <button type="submit" name="movieId" th:value="${movie.movieId}">Seat</button>
+                        </td>
+                    </form>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>

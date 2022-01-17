@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org ">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Slots</title>
+    <link rel="stylesheet" href="movieSlots.css">
+    <link rel="stylesheet" href="/login.css">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+<ul>
+    <li><a th:href="@{/userProfile/{userId} (userId=${username})}">Profile</a></li>
+    <li><a href="/viewMovies">Movies</a></li>
+    <li><a href="/previousBookings">Previous Bookings</a></li>
+    <li><a href="/wallet">Wallet</a></li>
+    <li><a href="/login">Logout</a></li>
+</ul>
+<ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <div class="area">
+        <div class="login">
+            <h6 style="font-size:20px;color:white;" align="center"><small><span
+                    th:text="${message}"></span></small></h6>
+            <div class="form">
+                <span>Previous Bookings</span><br><br>
+                <table class="space">
+                    <tr align="center">
+                        <td style="font-size:15px;font-weight:bold;">Movie Id</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <td style="font-size:15px;font-weight:bold;">Movie Name</td>&nbsp;&nbsp;
+                        <td style="font-size:15px;font-weight:bold;">Movie Date</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <td style="font-size:15px;font-weight:bold;">Venue</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <td style="font-size:15px;font-weight:bold;">Seat</td>
+                    </tr>
+
+                    <tr th:each="ticket : ${tickets}" align="center">
+                        <td><span class="formStyle" style="font-size:15px;"
+                                  th:text="${ticket.movieId}"></span></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <td><span class="formStyle" style="font-size:15px;"
+                                  th:text="${ticket.getMovies().getMovieName()}"></span></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <td><span class="formStyle" style="font-size:15px;"
+                                  th:text="${ticket.getMovies().getShowMovieDate()}"></span></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <td><span class="formStyle" style="font-size:15px;"
+                                  th:text="${ticket.getMovies().getVenue()}"></span></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <td><span class="formStyle" style="font-size:15px;"
+                                  th:text="${ticket.ticketId}"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org ">
+<head>
+    <meta charset="UTF-8">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"
+            integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    >
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="viewMovie.css">
+    <title>Movies</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<ul>
+    <li><a th:href="@{/userProfile/{userId} (userId=${username})}">Profile</a></li>
+    <li><a href="/viewMovies">Movies</a></li>
+    <li><a href="/previousBookings">Previous Bookings</a></li>
+    <li><a href="/wallet">Wallet</a></li>
+    <li><a href="/login">Logout</a></li>
+</ul>
+<div class="area">
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <div class="area">
+            <div class="container">
+                <div class="gallery">
+                    <form class="gallery" action="/viewMovies" method="post">
+                        <div class="alignButton"><img
+                                src="https://i.pinimg.com/564x/60/58/95/60589537a52b5fc16faaa68d671caa18.jpg"
+                                alt="Minnal Murali">
+                            <button class="btn" type="submit" name="Movie" value="Minnal Murali">Minnal Murali</button>
+                        </div>
+
+                        <div class="alignButton"><img
+                                src="https://popcornusa.s3.amazonaws.com/gallery/1636588947-kurup.jpg" alt="Kurup">
+                            <button class="btn" type="submit" name="Movie" value="Kurup">Kurup</button>
+                        </div>
+
+                        <div class="alignButton"><img
+                                src="https://i.pinimg.com/originals/81/7c/90/817c90de6a9c8c670ffb72fdaafebba8.jpg"
+                                alt="Spiderman">
+                            <button class="btn" type="submit" name="Movie" value="Spiderman">Spiderman</button>
+                        </div>
+
+                        <div class="alignButton"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG6L2WmlrU5r2HzTKoXTJC5DFyU9vMbUJ79Cp5P7RB5QEEnXkH"
+                                alt="RRR">
+                            <button class="btn" type="submit" name="Movie" value="RRR">RRR</button>
+                        </div>
+
+                        <div class="alignButton"><img
+                                src="https://m.media-amazon.com/images/M/MV5BMjI2Njg2Y2EtZjgwMC00ZGVkLWJmMWYtYjVhYjk2ZTkwNWE1XkEyXkFqcGdeQXVyMTMxMjA5NDU1._V1_.jpg"
+                                alt="K.G.F Chapter 2">
+                            <button class="btn" type="submit" name="Movie" value="K.G.F Chapter 2">K.G.F Chapter 2
+                            </button>
+                        </div>
+
+                        <div class="alignButton"><img
+                                src="https://i.pinimg.com/564x/d2/a4/71/d2a47158165fed9d543ff5a90666b301.jpg"
+                                alt="Minion">
+                            <button class="btn" type="submit" name="Movie" value="Minions">Minions</button>
+                        </div>
+
+                        <div class="alignButton"><img
+                                src="https://wallpapercave.com/wp/wp10318046.jpg"
+                                alt="Liger">
+                            <button class="btn" type="submit" name="Movie" value="Liger">Liger</button>
+                        </div>
+
+                        <div class="alignButton"><img
+                                src="https://m.media-amazon.com/images/M/MV5BYzdkOWYwOTEtMDFiYS00MzYzLWI0MmMtNjE1ODcyNDJjMTFiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg"
+                                alt="The Lost City">
+                            <button class="btn" type="submit" name="Movie" value="The Lost City">The Lost City</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>

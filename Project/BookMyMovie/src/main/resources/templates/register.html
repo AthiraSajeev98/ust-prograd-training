@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org ">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<ul>
+    <li><a href="/home">Home</a></li>
+    <li><a href="/viewMoviesInHome">Movies</a></li>
+    <li><a href="/register">Register</a></li>
+    <li><a href="/login">Login</a></li>
+</ul>
+<h6 style="font-size:20px;color:white;" align="center"><small><span th:text="${successMessage}"></span></small></h6>
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <div class="area">
+            <div class="login">
+                <div class="form">
+                    <form class="login-form" action="/register" method="post">
+                        <span>Register</span><br><br><br>
+                        <input type="text" name="userName" placeholder="Username" required/>
+                        <input type="password" name="password" placeholder="password" required/>
+                        <input type="text" name="customerName" placeholder="Name" required/>
+                        <input type="text" name="age" placeholder="Age" required/>
+                        <input type="text" name="gender" placeholder="Gender" required/>
+                        <input type="text" name="emailId" placeholder="Email" required/>
+                        <input type="text" name="address" placeholder="Address" required/>
+                        <input type="text" name="phoneNumber" placeholder="Phone Number" required/>
+                        <button type="submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>
